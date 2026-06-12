@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سولارا | بوابة الهوية والاستراتيجية الرقمية - SOLARA Brand Hub</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+        :root {
+            --navy: #0D1E3A;
+            --gold: #C5A059;
+            --gold-hover: #D4AF37;
+            --light: #F4F6F9;
+            --white: #FFFFFF;
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(197, 160, 89, 0.2);
+            --shadow: 0 10px 30px rgba(13, 30, 58, 0.08);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', 'Montserrat', sans-serif;
+            background: radial-gradient(circle at 10% 20%, rgba(244, 246, 249, 1) 0%, rgba(230, 235, 243, 1) 90%);
+            color: var(--navy);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header block */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .logo-area {
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: var(--navy);
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo-text::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #66788F;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .project-badge {
+            display: inline-block;
+            background: var(--navy);
+            color: var(--white);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 15px;
+            border: 1px solid var(--gold);
+        }
+
+        /* Hero / Call To Action Card */
+        .portal-hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #152C52 100%);
+            color: var(--white);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(13, 30, 58, 0.2);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 0.8s ease;
+        }
+
+        .portal-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .portal-hero h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .portal-hero p {
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            color: #CCD6E2;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gold);
+            color: var(--navy);
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(197, 160, 89, 0.4);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(197, 160, 89, 0.6);
+        }
+
+        .btn-primary svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover svg {
+            transform: scale(1.15);
+        }
+
+        /* Folders Explorer Grid */
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            padding-right: 15px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 15%;
+            bottom: 15%;
+            width: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gold);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(13, 30, 58, 0.12);
+            border-color: rgba(197, 160, 89, 0.4);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .card-icon {
+            font-size: 1.8rem;
+        }
+
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .card-desc {
+            font-size: 0.92rem;
+            color: #556B85;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-top: 1px dashed rgba(13, 30, 58, 0.1);
+            padding-top: 15px;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-decoration: none;
+            padding: 6px 12px;
+            background: rgba(197, 160, 89, 0.1);
+            border-radius: 6px;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .card-link:hover {
+            background: var(--navy);
+            color: var(--white);
+            border-color: var(--navy);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #66788F;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(13, 30, 58, 0.1);
+            margin-top: 50px;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .portal-hero {
+                padding: 35px 20px;
+            }
+            .portal-hero h2 {
+                font-size: 1.7rem;
+            }
+            .portal-hero p {
+                font-size: 1rem;
+            }
+            .btn-primary {
+                padding: 14px 28px;
+                font-size: 1.1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-text">SOLARA</div>
+            <div class="tagline">Summer Essentials Made Personal</div>
+        </div>
+        <p style="font-size: 1.2rem; font-weight: 600; color: var(--navy);">بوابة ملفات المشروع وهويته الرقمية | ITI Graduation Strategy Portfolio</p>
+        <span class="project-badge">مشروع تخرج معهد تكنولوجيا المعلومات - دفعة 2026</span>
+    </header>
+
+    <!-- Hero / Call To Action for Portal -->
+    <section class="portal-hero">
+        <h2>البوابة التفاعلية لهوية سولارا</h2>
+        <p>قم بالدخول إلى البوابة الرقمية التفاعلية لعرض محاكي مناقشة التخرج، جدول المحتوى المفلتر لـ 60 يومًا، تقارير المنافسين والـ SEO، ومعرض الصور التفاعلي قبل وبعد تحسينها بالذكاء الاصطناعي.</p>
+        <a href="brand_portal/index.html" class="btn-primary">
+            <span>دخول البوابة التفاعلية / Launch Portal</span>
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Project deliverables directories -->
+    <h3 class="section-title">مستندات وملفات المشروع | Deliverables Explorer</h3>
+    
+    <div class="grid">
+        
+        <!-- Chapter 1: Documentation -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">📁</span>
+                    <h4 class="card-title">فصول التوثيق والتقرير النهائي</h4>
+                </div>
+                <p class="card-desc">يحتوي هذا المجلد على التقرير الشامل المكون من 160 صفحة بصيغة Word بالإضافة إلى فصول التوثيق الفردية لمشروع التخرج بعد تنقيحها ومراجعتها.</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/01%20-%20Documentation%20%26%20Chapters" class="card-link" target="_blank">تصفح الملفات / Browse</a>
+            </div>
+        </div>
+
+        <!-- Chapter 2: Presentations -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">📊</span>
+                    <h4 class="card-title">سلايدات وعروض المناقشة</h4>
+                </div>
+                <p class="card-desc">ملفات العروض التقديمية (.pptx) وملفات الـ PDF لعرض المناقشة النهائي، واستراتيجية الـ SWOT، ومخطط الـ SEO التقني.</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/02%20-%20Presentations" class="card-link" target="_blank">تصفح العروض / View Slides</a>
+            </div>
+        </div>
+
+        <!-- Chapter 3: Research -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">🔎</span>
+                    <h4 class="card-title">دراسة السوق واستراتيجية الـ STP</h4>
+                </div>
+                <p class="card-desc">تحليل مفصل لسوق المنتجات اليدوية الصيفية في مصر، دراسات الاستهداف وتحديد الفئات المستهدفة، وبيانات المشترين الافتراضيين (Buyer Personas).</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/03%20-%20Market%20Research%20%26%20Strategy" class="card-link" target="_blank">تصفح الأبحاث / Market Studies</a>
+            </div>
+        </div>
+
+        <!-- Chapter 4: Content Strategy -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">📅</span>
+                    <h4 class="card-title">خطة المحتوى وجدول التنفيذ</h4>
+                </div>
+                <p class="card-desc">خطة المحتوى الكاملة لـ 60 يومًا، خارطة طريق مهام الفريق، ملف الـ UGC التفاعلي وأدوات الذكاء الاصطناعي التي تم استخدامها لتسريع العمل.</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/04%20-%20Content%20Strategy%20%26%20Execution" class="card-link" target="_blank">خطة المحتوى / Content Plans</a>
+            </div>
+        </div>
+
+        <!-- Chapter 5: SEO & Website -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">🌐</span>
+                    <h4 class="card-title">تحليل المنافسين والسيو (SEO)</h4>
+                </div>
+                <p class="card-desc">تقارير الـ SEO التفصيلية، فحص الكلمات المفتاحية لمنافسي الساحل، وجداول بيانات Rival IQ لتقييم ومقارنة أداء المنافسين (KOFFA, Khoos).</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/05%20-%20Website%2C%20SEO%20%26%20Competitors" class="card-link" target="_blank">ملفات السيو / SEO & Rivals</a>
+            </div>
+        </div>
+
+        <!-- Chapter 6: Visual Assets -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">🎨</span>
+                    <h4 class="card-title">الهوية البصرية وأصول التصميم</h4>
+                </div>
+                <p class="card-desc">شعارات البراند بنوعيها وبخلفيات شفافة، تصاميم ومجسمات التغليف الفاخر، الورق الحريري، بطاقات الشكر، وتصاميم شبكة إنستغرام التخيلية.</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/06%20-%20Branding%20%26%20Design%20Assets" class="card-link" target="_blank">التصاميم والأصول / Visual Assets</a>
+            </div>
+        </div>
+
+        <!-- Chapter 7: Photography -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">📸</span>
+                    <h4 class="card-title">معرض تصوير المنتجات (قبل وبعد)</h4>
+                </div>
+                <p class="card-desc">الصور الأصلية للمنتجات بعد تصويرها، ومقارنتها بالنسخ المعدلة والمحسنة باستخدام الذكاء الاصطناعي لإنشاء كتالوج تسويقي فاخر.</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/07%20-%20Product%20Photography" class="card-link" target="_blank">معرض الصور / Gallery Folders</a>
+            </div>
+        </div>
+
+        <!-- Chapter 8: Videos -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">🎬</span>
+                    <h4 class="card-title">الفيديوهات وحملات الـ UGC</h4>
+                </div>
+                <p class="card-desc">فيديوهات الحملة الترويجية القصيرة (Teasers) والمعدلة، وسيناريوهات الفيديوهات المقترحة ومحتوى صناع المحتوى (User Generated Content).</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/08%20-%20Videos%20%26%20UGC%20Campaigns" class="card-link" target="_blank">الفيديوهات والحملات / Videos</a>
+            </div>
+        </div>
+
+        <!-- Chapter 9: ITI Context -->
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-icon">📝</span>
+                    <h4 class="card-title">شروط ومتمتطلبات معهد ITI</h4>
+                </div>
+                <p class="card-desc">إرشادات الدكتورة دعاء لتسليم الملفات وتنظيم عروض التخرج، مع المرجعيات التفصيلية لبراند سولارا وقوانين الكتابة الإبداعية.</p>
+            </div>
+            <div class="card-links">
+                <a href="https://github.com/ahmedissamramadan/solara-brand/tree/main/09%20-%20ITI%20Requirements%20%26%20Context" class="card-link" target="_blank">متطلبات التسليم / ITI Context</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SOLARA Brand Portal. Built for the ITI Digital Marketing Graduation Discussion.</p>
+        <p style="font-size: 0.8rem; margin-top: 5px;">تطوير وتنسيق وتفعيل الاستضافة التلقائية بواسطة المساعد البرمجي الذكي.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

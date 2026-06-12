@@ -1,0 +1,4 @@
+.DS_Store
+Thumbs.db
+brand_portal/*.png
+!brand_portal/content_data.js

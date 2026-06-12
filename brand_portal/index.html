@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سولارا — بوابة التوثيق التفاعلية للمشروع والهوية التجارية | SOLARA Brand Portal</title>
+  <meta name="description" content="بوابة توثيق شاملة وتفاعلية لعلامة سولارا التجارية - مشروع تخرج ITI للتسويق الرقمي. تتضمن الهوية البصرية، خطة المحتوى، تحليل المنافسين، وتصوير المنتجات.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Design Styles -->
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+  <!-- Sidebar Navigation Panel -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo-container">
+      <img src="../06 - Branding & Design Assets/Logo/SOLARA Logo - Clear Background.png" alt="SOLARA Logo" class="logo-img">
+      <div>
+        <span class="logo-text">SOLARA</span>
+        <span class="logo-tagline">صيفك... بطابعك</span>
+      </div>
+    </div>
+    
+    <!-- Theme Switcher Selector -->
+    <div class="theme-switcher-container" style="padding: 16px 24px; border-bottom: 1px solid var(--glass-border); display: flex; flex-direction: column; gap: 8px; position: relative; z-index: 5;">
+      <span style="font-size: 11px; font-weight: 700; color: var(--color-sand); text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--font-english); text-align: right;">سمات البوابة / Theme</span>
+      <div class="theme-buttons" style="display: flex; gap: 8px; justify-content: space-between;">
+        <button class="btn-theme-selector active" data-theme="deepsea" style="flex: 1; padding: 8px 4px; border-radius: var(--radius-sm); border: 1px solid var(--color-sand); background: rgba(var(--color-sand-rgb), 0.15); color: var(--color-sand); font-size: 11px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: var(--transition-smooth);" title="Deep Sea Navy"><i class="fa-solid fa-moon"></i> <span style="font-weight: 600;">كحلي</span></button>
+        <button class="btn-theme-selector" data-theme="sunset" style="flex: 1; padding: 8px 4px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border); background: rgba(14,24,38,0.3); color: var(--color-text-soft); font-size: 11px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: var(--transition-smooth);" title="Golden Sunset"><i class="fa-solid fa-sun-plant-wilt"></i> <span style="font-weight: 600;">غروب</span></button>
+        <button class="btn-theme-selector" data-theme="ivory" style="flex: 1; padding: 8px 4px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border); background: rgba(14,24,38,0.3); color: var(--color-text-soft); font-size: 11px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: var(--transition-smooth);" title="Ivory Linen"><i class="fa-solid fa-lightbulb"></i> <span style="font-weight: 600;">كتان</span></button>
+      </div>
+    </div>
+    
+    <ul class="nav-links">
+      <li>
+        <a class="nav-item active" data-section="dashboard" id="nav-dashboard">
+          <i class="fa-solid fa-sun"></i>
+          <span>جوهر البراند</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="swot" id="nav-swot">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>SWOT & PESTLE</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="personas" id="nav-personas">
+          <i class="fa-solid fa-users"></i>
+          <span>شرائح الجمهور</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="calendar" id="nav-calendar">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>خطة المحتوى 60 يوم</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="competitors" id="nav-competitors">
+          <i class="fa-solid fa-bezier-curve"></i>
+          <span>المنافسين والأداء</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="photography" id="nav-photography">
+          <i class="fa-solid fa-camera-retro"></i>
+          <span>تصوير المنتجات</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="gallery" id="nav-gallery">
+          <i class="fa-solid fa-images"></i>
+          <span>معرض الصور الكامل</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="design" id="nav-design">
+          <i class="fa-solid fa-palette"></i>
+          <span>الهوية البصرية</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="campaigns" id="nav-campaigns">
+          <i class="fa-solid fa-video"></i>
+          <span>الفيديو والـ UGC</span>
+        </a>
+      </li>
+      <li>
+        <a class="nav-item" data-section="graduation" id="nav-graduation">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>مساعد المناقشة</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-text">ITI Digital Marketing — 2026</div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- Main Content Viewer -->
+  <div class="main-content">
+    <!-- Ambient Animated Canvas -->
+    <canvas id="ambientCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.75;"></canvas>
+    
+    <!-- Decorative background orbs -->
+    <div class="orb orb-gold"></div>
+    <div class="orb orb-navy"></div>
+    <div class="orb orb-terracotta"></div>
+
+    <!-- ============================== -->
+    <!-- Section 1: Dashboard & Brand DNA -->
+    <!-- ============================== -->
+    <section id="dashboard" class="page-section active">
+      <h1 class="section-title"><i class="fa-solid fa-sun" style="color: var(--color-sand);"></i> جوهر علامة سولارا | Brand DNA</h1>
+      <p class="section-subtitle">ملخص استراتيجي يبرز تموضع البراند في السوق المصري لمنتجات الصيف الفاخرة المصنوعة يدويًا بالطلب.</p>
+      
+      <!-- KPI Stats Row -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-tag"></i></div>
+          <div class="stat-value" style="font-family: var(--font-english); direction: ltr;"><span class="counter" data-target="800">0</span> - <span class="counter" data-target="1800">0</span></div>
+          <div class="stat-label">جنيه مصري — الشريحة السعرية</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-gem"></i></div>
+          <div class="stat-value">Masstige</div>
+          <div class="stat-label">تموضع سعري فاخر بأسعار متاحة</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+          <div class="stat-value" style="font-family: var(--font-english); direction: ltr;"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label">صناعة يدوية مخصصة بالاسم</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="stat-value" style="font-family: var(--font-english); direction: ltr;"><span class="counter" data-target="60">0</span></div>
+          <div class="stat-label">يوم خطة محتوى متكاملة</div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="left-col">
+          <div class="glass-card">
+            <h3><i class="fa-solid fa-book-open" style="color: var(--color-sand); margin-left: 8px;"></i> قصة البراند (Brand Story)</h3>
+            <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+            <div class="brand-story-box">
+              <p><strong style="color: var(--color-sand);">العربية (Egyptian Summer Storytelling):</strong></p>
+              <p style="margin-bottom: 18px; font-style: italic; color: #f4e6cf; font-size: 15.5px; line-height: 2;">
+                "في كل صيف فيه أماكن بنفتكرها... وفيه ناس بنفتكرهم... وفيه تفاصيل صغيرة بتفضل معانا. SOLARA اتخلقت عشان تحول التفاصيل دي لحاجة تقدر تلمسها. كل قطعة بنصممها مستوحاة من الشمس، والبحر، والرحلات اللي بتسيب أثر. لكن اللي بيخليها مختلفة فعلًا هو إنها بتتحول لقطعة تخص صاحبتها وحدها. اسمها. حكايتها. صيفها. مش مجرد إكسسوار... لكن جزء من ذكرى هتفضل معاها."
+              </p>
+              <p><strong style="color: var(--color-sand);">English (Resort Escapism Vibe):</strong></p>
+              <p style="font-family: var(--font-english); font-size: 14px; color: var(--color-text-soft); line-height: 1.9;">
+                "Every summer leaves something behind. A place. A feeling. A memory worth keeping. SOLARA was created to turn those memories into something tangible. Inspired by the coast, crafted by hand, and personalized for the person who carries it. Because the most beautiful pieces are the ones that feel like they were made for you."
+              </p>
+            </div>
+          </div>
+          
+          <div class="glass-card">
+            <h3><i class="fa-solid fa-bullseye" style="color: var(--color-sand); margin-left: 8px;"></i> المهمة والرؤية والهدف الأساسي</h3>
+            <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+            <div class="brand-values-grid">
+              <div class="brand-value-item">
+                <div class="brand-value-icon"><i class="fa-solid fa-eye"></i></div>
+                <div>
+                  <strong style="color: var(--color-sand);">رؤية البراند (Vision)</strong>
+                  <p>أن نصبح أحد أقوى براندات اللايف ستايل الصيفية المصنوعة يدويًا في العالم العربي بهوية واضحة ولغة تصميم مميزة تدمج التخصيص بالتصميم العصري للساحل.</p>
+                </div>
+              </div>
+              <div class="brand-value-item">
+                <div class="brand-value-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div>
+                  <strong style="color: var(--color-sand);">رسالة البراند (Mission)</strong>
+                  <p>ابتكار منتجات صيفية يدوية تجمع بين الأناقة والراحة، وتقديم تجربة مبيعات عاطفية تجعل كل قطعة تعبر عن هوية مالكتها الفريدة.</p>
+                </div>
+              </div>
+              <div class="brand-value-item">
+                <div class="brand-value-icon"><i class="fa-solid fa-heart"></i></div>
+                <div>
+                  <strong style="color: var(--color-sand);">لماذا سولارا؟ (Brand WHY)</strong>
+                  <p>كل امرأة تستحق اقتناء قطعة صيفية تحمل هويتها الخاصة. نحن لا نبيع حقائب وقبعات، نحن نبيع الملكية العاطفية، التفرد، والذكريات المحفوظة.</p>
+                </div>
+              </div>
+              <div class="brand-value-item">
+                <div class="brand-value-icon"><i class="fa-solid fa-quote-right"></i></div>
+                <div>
+                  <strong style="color: var(--color-sand);">شعار الإدارة (Internal Mantra)</strong>
+                  <p>"التخصيص ليس إضافة، التخصيص هو المنتج."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="right-col">
+          <div class="glass-card" style="border-right: 4px solid var(--color-sand);">
+            <h3><i class="fa-solid fa-id-card" style="color: var(--color-sand); margin-left: 8px;"></i> بطاقة الهوية السريعة</h3>
+            <table class="brand-core-table">
+              <tr>
+                <td class="brand-core-label">اسم البراند</td>
+                <td class="brand-core-value" style="font-family: var(--font-english); font-weight: 700; letter-spacing: 1px;">SOLARA</td>
+              </tr>
+              <tr>
+                <td class="brand-core-label">التاجلاين</td>
+                <td class="brand-core-value">صيفك... بطابعك.<br><span style="font-family: var(--font-english); font-size: 12px; color: var(--color-text-soft);">Your Summer. Your Signature.</span></td>
+              </tr>
+              <tr>
+                <td class="brand-core-label">الميزة الفريدة</td>
+                <td class="brand-core-value" style="font-weight: 600;">البراند المصري الصيفي الوحيد الذي يجمع التخصيص بالاسم بالصناعة اليدوية الراقية للساحل.</td>
+              </tr>
+              <tr>
+                <td class="brand-core-label">الشريحة السعرية</td>
+                <td class="brand-core-value" style="color: var(--color-sand); font-weight: 700;">800 - 1800 جنيه مصري</td>
+              </tr>
+              <tr>
+                <td class="brand-core-label">صوت البراند</td>
+                <td class="brand-core-value">دافئ بدون مبالغة، راقٍ بدون تكلف، شخصي ومبدع.</td>
+              </tr>
+              <tr>
+                <td class="brand-core-label">المنصات الأساسية</td>
+                <td class="brand-core-value"><span class="platform-badge platform-instagram" style="font-size: 10px;">Instagram</span> <span class="platform-badge platform-tiktok" style="font-size: 10px;">TikTok</span> <span class="platform-badge platform-facebook" style="font-size: 10px;">Facebook</span></td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Hero product image -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <img src="../06 - Branding & Design Assets/Packaging & Mockups/SOLARA_coastal_aesthetic_bag.png" alt="SOLARA Coastal Bag" style="width: 100%; height: 240px; object-fit: cover; display: block; cursor: pointer;" class="lightbox-trigger">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 2: SWOT & PESTLE -->
+    <!-- ============================== -->
+    <section id="swot" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-layer-group" style="color: var(--color-sand);"></i> تحليل البيئة الاستراتيجية | SWOT & PESTLE</h1>
+      <p class="section-subtitle">تفصيل شامل لنقاط القوة والضعف والفرص والتهديدات، مع العوامل المحيطة بالسوق المصري.</p>
+      
+      <div class="glass-card">
+        <h3>مصفوفة SWOT التفاعلية</h3>
+        <div class="swot-grid">
+          <div class="glass-card swot-quadrant swot-s">
+            <div class="swot-header"><i class="fa-solid fa-shield-halved"></i> نقاط القوة (Strengths)</div>
+            <ul class="swot-list" id="swot-strengths-list"></ul>
+          </div>
+          <div class="glass-card swot-quadrant swot-w">
+            <div class="swot-header"><i class="fa-solid fa-triangle-exclamation"></i> نقاط الضعف (Weaknesses)</div>
+            <ul class="swot-list" id="swot-weaknesses-list"></ul>
+          </div>
+          <div class="glass-card swot-quadrant swot-o">
+            <div class="swot-header"><i class="fa-solid fa-chart-line"></i> الفرص (Opportunities)</div>
+            <ul class="swot-list" id="swot-opportunities-list"></ul>
+          </div>
+          <div class="glass-card swot-quadrant swot-t">
+            <div class="swot-header"><i class="fa-solid fa-circle-radiation"></i> التهديدات (Threats)</div>
+            <ul class="swot-list" id="swot-threats-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="margin-top: 30px;">
+        <h3>تحليل العوامل البيئية الكلية (PESTLE Analysis)</h3>
+        <div class="pestle-container" id="pestleContainer"></div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 3: Buyer Personas -->
+    <!-- ============================== -->
+    <section id="personas" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-users" style="color: var(--color-sand);"></i> شرائح المستهلكين و Buyer Personas</h1>
+      <p class="section-subtitle">الملامح والاحتياجات والمخاوف للشرائح الرئيسية التي تستهدفها حملات سولارا التسويقية.</p>
+      
+      <div class="personas-grid" id="personasGrid"></div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 4: 60-Day Content Calendar -->
+    <!-- ============================== -->
+    <section id="calendar" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-calendar-days" style="color: var(--color-sand);"></i> محرك المحتوى وخطة الـ 60 يومًا | Content Engine</h1>
+      <p class="section-subtitle">تصفح وابحث وتصيد الأفكار في المنشورات الكاملة لـ 60 يومًا متتالية لمنصات إنستجرام وتيك توك وفيسبوك.</p>
+      
+      <div class="calendar-filters">
+        <input type="text" id="searchCalendar" class="filter-input search-bar" placeholder="ابحث باليوم، الكابشن، الجمهور، أو الكلمات المفتاحية...">
+        <select id="platformFilter" class="filter-input">
+          <option value="all">كل المنصات (All Platforms)</option>
+          <option value="instagram">Instagram</option>
+          <option value="tiktok">TikTok</option>
+          <option value="facebook">Facebook</option>
+        </select>
+      </div>
+
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 5: Competitors & Charts -->
+    <!-- ============================== -->
+    <section id="competitors" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-bezier-curve" style="color: var(--color-sand);"></i> تحليل المنافسين ومؤشرات الأداء | Competitive Intelligence</h1>
+      <p class="section-subtitle">مقارنة معيارية للمنافسين في السوق المصري مدعومة ببيانات أداء المنصات الحقيقية عبر Rival IQ.</p>
+      
+      <div class="glass-card">
+        <h3>جدول المقارنة المعيارية للمنافسين (Competitor Benchmarking)</h3>
+        <div style="overflow-x: auto; margin-top: 15px;">
+          <table class="comp-matrix-table">
+            <thead>
+              <tr>
+                <th>البراند / المنافس</th>
+                <th>التموضع في السوق</th>
+                <th>متوسط الأسعار</th>
+                <th>أهم نقاط القوة</th>
+                <th>أهم نقاط الضعف</th>
+                <th>التركيز الأساسي</th>
+              </tr>
+            </thead>
+            <tbody id="competitorsMatrixBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="glass-card charts-section">
+        <h3>مؤشرات الأداء على السوشيال ميديا للمنافسين (Competitor Metrics)</h3>
+        <p class="section-subtitle" style="margin-bottom: 20px;">استعرض مؤشرات الأداء التفصيلية للمنافسين. يمكنك التبديل بين صور تقارير Rival IQ الأصلية ولوحة التحليل التفاعلية.</p>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px; position: relative; z-index: 5;">
+          <div class="charts-selector" style="margin-bottom: 0;">
+            <button class="btn-chart-tab active" data-platform="instagram">إنستجرام</button>
+            <button class="btn-chart-tab" data-platform="facebook">فيسبوك</button>
+            <button class="btn-chart-tab" data-platform="tiktok">تيك توك</button>
+            <button class="btn-chart-tab" data-platform="crosschannel">مجموع المنصات</button>
+          </div>
+          <div class="view-mode-selector" style="display: flex; gap: 8px;">
+            <button class="btn-view-mode active" data-mode="rivaliq" style="padding: 8px 16px; border-radius: var(--radius-sm); border: 1px solid var(--color-sand); background: rgba(var(--color-sand-rgb), 0.15); color: var(--color-sand); font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: var(--transition-smooth); font-family: var(--font-arabic);"><i class="fa-solid fa-file-image"></i> تقارير Rival IQ</button>
+            <button class="btn-view-mode" data-mode="interactive" style="padding: 8px 16px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border); background: transparent; color: var(--color-text-soft); font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: var(--transition-smooth); font-family: var(--font-arabic);"><i class="fa-solid fa-chart-simple"></i> لوحة تفاعلية</button>
+          </div>
+        </div>
+
+        <!-- Mode 1: Static Rival IQ Charts -->
+        <div class="charts-container" id="rivaliqContainer">
+          <div class="glass-card chart-card" style="margin-bottom: 0;">
+            <img id="img-posts" src="" alt="Posts Chart" class="chart-img lightbox-trigger">
+            <div class="chart-title" style="text-align: center; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--color-sand-light);"></div>
+          </div>
+          <div class="glass-card chart-card" style="margin-bottom: 0;">
+            <img id="img-eng" src="" alt="Engagement Chart" class="chart-img lightbox-trigger">
+            <div class="chart-title" style="text-align: center; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--color-sand-light);"></div>
+          </div>
+          <div class="glass-card chart-card" style="margin-bottom: 0;">
+            <img id="img-followers" src="" alt="Followers Chart" class="chart-img lightbox-trigger">
+            <div class="chart-title" style="text-align: center; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--color-sand-light);"></div>
+          </div>
+          <div class="glass-card chart-card" style="margin-bottom: 0;">
+            <img id="img-eng-rate" src="" alt="Engagement Rate Chart" class="chart-img lightbox-trigger">
+            <div class="chart-title" style="text-align: center; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--color-sand-light);"></div>
+          </div>
+        </div>
+
+        <!-- Mode 2: Interactive Chart.js Charts -->
+        <div class="charts-container" id="interactiveContainer" style="display: none; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+          <div class="glass-card chart-card" style="margin-bottom: 0; padding: 20px;">
+            <h4 style="color: var(--color-sand); font-size: 15px; margin-bottom: 16px; text-align: center; font-weight: 700;"><i class="fa-solid fa-users" style="margin-left: 6px;"></i> حجم المتابعين الكلي (Total Followers)</h4>
+            <div style="position: relative; height: 260px; width: 100%;">
+              <canvas id="followersChart"></canvas>
+            </div>
+          </div>
+          <div class="glass-card chart-card" style="margin-bottom: 0; padding: 20px;">
+            <h4 style="color: var(--color-sand); font-size: 15px; margin-bottom: 16px; text-align: center; font-weight: 700;"><i class="fa-solid fa-paper-plane" style="margin-left: 6px;"></i> معدل نشر البوستات شهرياً (Monthly Posts)</h4>
+            <div style="position: relative; height: 260px; width: 100%;">
+              <canvas id="postsChart"></canvas>
+            </div>
+          </div>
+          <div class="glass-card chart-card" style="margin-bottom: 0; padding: 20px;">
+            <h4 style="color: var(--color-sand); font-size: 15px; margin-bottom: 16px; text-align: center; font-weight: 700;"><i class="fa-solid fa-bolt" style="margin-left: 6px;"></i> نسبة التفاعل لكل بوست (Engagement Rate %)</h4>
+            <div style="position: relative; height: 260px; width: 100%;">
+              <canvas id="engagementChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="glass-card" style="margin-top: 30px;">
+        <h3>استراتيجية الكلمات المفتاحية والسيو (SEO Strategy)</h3>
+        <div style="overflow-x: auto; margin-top: 15px;">
+          <table class="comp-matrix-table" id="seoKeywordsTable">
+            <thead>
+              <tr>
+                <th>الكلمة المفتاحية (Keyword)</th>
+                <th>حجم البحث الشهري (Volume)</th>
+                <th>صعوبة المنافسة (Difficulty)</th>
+                <th>نية الباحث (Search Intent)</th>
+              </tr>
+            </thead>
+            <tbody id="seoKeywordsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 6: Before & After Photo Slider -->
+    <!-- ============================== -->
+    <section id="photography" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-camera-retro" style="color: var(--color-sand);"></i> استوديو تصوير المنتجات ومعالجة الذكاء الاصطناعي</h1>
+      <p class="section-subtitle">شاهد كيف تم تحويل الصور الخام (Raw Before) إلى صور فوتوغرافية نهائية احترافية (After AI Retouch) باستخدام شريط السحب التفاعلي.</p>
+      
+      <div class="glass-card slider-showcase">
+        <div class="slider-nav">
+          <button class="btn-slider-select active" data-pair="abdeldayem">المنتج 1 — عبدالدايم</button>
+          <button class="btn-slider-select" data-pair="adham">المنتج 2 — أدهم</button>
+          <button class="btn-slider-select" data-pair="khaled">المنتج 3 — خالد</button>
+          <button class="btn-slider-select" data-pair="yussuf">المنتج 4 — يوسف</button>
+        </div>
+        
+        <br>
+
+        <div class="slider-container" id="photoSlider">
+          <div class="slider-img img-before">
+            <img src="" alt="Before Photo">
+          </div>
+          <div class="slider-img img-after">
+            <img src="" alt="After Photo">
+          </div>
+          <div class="slider-label label-before">الصورة الخام (Before Raw)</div>
+          <div class="slider-label label-after">تصميم كتالوج AI (After)</div>
+          <div class="slider-handle">
+            <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 7: Full Product Gallery (NEW) -->
+    <!-- ============================== -->
+    <section id="gallery" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-images" style="color: var(--color-sand);"></i> معرض صور المنتجات الكامل | Full Product Gallery</h1>
+      <p class="section-subtitle">جميع صور المنتجات الخام والمعالجة بالذكاء الاصطناعي — مرتبة حسب عضو الفريق ومرحلة التصوير. اضغط على أي صورة لتكبيرها.</p>
+      
+      <div class="product-tabs" id="galleryTabs">
+        <button class="product-tab-btn active" data-member="abdeldayem">عبدالدايم</button>
+        <button class="product-tab-btn" data-member="adham">أدهم</button>
+        <button class="product-tab-btn" data-member="khaled">خالد</button>
+        <button class="product-tab-btn" data-member="yussuf">يوسف</button>
+      </div>
+
+      <div id="galleryContent">
+        <!-- Dynamically populated by script.js -->
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 8: Design System -->
+    <!-- ============================== -->
+    <section id="design" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-palette" style="color: var(--color-sand);"></i> دليل الهوية البصرية ونظام التصميم | Design System</h1>
+      <p class="section-subtitle">تصفح الألوان الرسمية، الخطوط، نماذج التغليف الفاخر المطور لـ SOLARA، وكروت الشكر والملصقات.</p>
+      
+      <!-- Colors & Typography -->
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-droplet" style="color: var(--color-sand); margin-left: 8px;"></i> باليت الألوان الرسمية (Brand Colors)</h3>
+        <p class="section-subtitle" style="margin-bottom: 15px;">انقر على مربعات الألوان لنسخ كود الـ HEX مباشرة.</p>
+        <div class="asset-colors">
+          <div class="color-swatch" style="background-color: #070d14; color: white;" data-label="البحر الداكن" onclick="navigator.clipboard.writeText('#070d14'); showToast('تم نسخ #070d14 📋')">#070D14</div>
+          <div class="color-swatch" style="background-color: #121e2a; color: white;" data-label="كحلي ساحلي" onclick="navigator.clipboard.writeText('#121e2a'); showToast('تم نسخ #121e2a 📋')">#121E2A</div>
+          <div class="color-swatch" style="background-color: #dfb776; color: black;" data-label="ذهبي رملي" onclick="navigator.clipboard.writeText('#dfb776'); showToast('تم نسخ #dfb776 📋')">#DFB776</div>
+          <div class="color-swatch" style="background-color: #c4703f; color: white;" data-label="طيني تراكوتا" onclick="navigator.clipboard.writeText('#c4703f'); showToast('تم نسخ #c4703f 📋')">#C4703F</div>
+          <div class="color-swatch" style="background-color: #faf8f5; color: black;" data-label="أبيض كتان" onclick="navigator.clipboard.writeText('#faf8f5'); showToast('تم نسخ #faf8f5 📋')">#FAF8F5</div>
+        </div>
+        
+        <br><br>
+        
+        <h3><i class="fa-solid fa-font" style="color: var(--color-sand); margin-left: 8px;"></i> الخطوط الرسمية (Brand Typography)</h3>
+        <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div>
+            <p><strong>العناوين والمقاطع العربية (Cairo Font):</strong></p>
+            <p style="font-family: 'Cairo', sans-serif; font-size: 22px; font-weight: 700; margin-top: 8px;">أناقة هادئة بروح صيفية واثقة.</p>
+          </div>
+          <div>
+            <p><strong>English Typography (Montserrat Font):</strong></p>
+            <p style="font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 700; margin-top: 8px; color: var(--color-sand);">Quietly distinctive. Effortlessly personal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Variations -->
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-star" style="color: var(--color-sand); margin-left: 8px;"></i> الشعار الرسمي (Official Logo)</h3>
+        <div class="assets-grid" id="logoAssetsGrid"></div>
+      </div>
+
+      <!-- Design Assets by Category -->
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-box-open" style="color: var(--color-sand); margin-left: 8px;"></i> التغليف الفاخر والموكابات (Packaging & Mockups)</h3>
+        <div class="assets-grid" id="packagingAssetsGrid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-sand); margin-left: 8px;"></i> عروض المنتجات والإنفوجرافيكس (Showcases)</h3>
+        <div class="assets-grid" id="showcaseAssetsGrid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-bullhorn" style="color: var(--color-sand); margin-left: 8px;"></i> الإعلانات والعروض الترويجية (Ads & Promos)</h3>
+        <div class="assets-grid" id="adsAssetsGrid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-envelope-open-text" style="color: var(--color-sand); margin-left: 8px;"></i> كروت الشكر والملصقات (Stationery & Cards)</h3>
+        <div class="assets-grid" id="stationeryAssetsGrid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-cube" style="color: var(--color-sand); margin-left: 8px;"></i> موكابات المنتجات (3D Mockups)</h3>
+        <div class="assets-grid" id="mockupsAssetsGrid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h3><i class="fa-solid fa-grid-2" style="color: var(--color-sand); margin-left: 8px;"></i> تصميمات جريد السوشيال ميديا (Social Media Grid)</h3>
+        <div class="assets-grid" id="socialMediaAssetsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 9: Campaigns & UGC Videos -->
+    <!-- ============================== -->
+    <section id="campaigns" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-video" style="color: var(--color-sand);"></i> الفيديو الإعلاني وحملات الـ UGC</h1>
+      <p class="section-subtitle">تصفح الفيديوهات الإعلانية المصممة بالذكاء الاصطناعي لحملات SOLARA مع قراءة خطط وسيناريوهات تصوير المحتوى.</p>
+      
+      <div class="glass-card videos-grid">
+        <div class="left-col">
+          <div class="video-player-container">
+            <video id="campaignVideo" controls class="video-player" src=""></video>
+          </div>
+        </div>
+        <div class="right-col">
+          <h3>اختر الفيديو / الحملة</h3>
+          <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 14px 0;">
+          <div class="ugc-brief-list">
+            <div class="ugc-brief-card active" data-brief="teasing">
+              <div class="ugc-brief-title"><i class="fa-solid fa-ghost" style="margin-left: 6px;"></i> فيديو التشويق الغامض (Teasing)</div>
+              <div class="ugc-brief-desc">الفيديو الترويجي الأول لإطلاق البراند وإثارة الفضول على الرمل.</div>
+            </div>
+            <div class="ugc-brief-card" data-brief="ai_reels">
+              <div class="ugc-brief-title"><i class="fa-solid fa-wand-magic-sparkles" style="margin-left: 6px;"></i> فيديو التخصيص بالذكاء الاصطناعي</div>
+              <div class="ugc-brief-desc">فيديو تفصيلي يستعرض الحفر والتطريز والملامح الراقية.</div>
+            </div>
+            <div class="ugc-brief-card" data-brief="unboxing">
+              <div class="ugc-brief-title"><i class="fa-solid fa-gift" style="margin-left: 6px;"></i> فيديو فتح الصندوق (Unboxing)</div>
+              <div class="ugc-brief-desc">إبراز جمال تغليف علب سولارا الزرقاء وتأثيرها العاطفي كهدية.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="glass-card" style="margin-top: 24px;">
+        <h3>سيناريو وتفاصيل الفيديو المختار</h3>
+        <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+        <div id="ugcBriefText" style="line-height: 2; font-size: 14.5px; color: var(--color-pearl);"></div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Section 10: Graduation Helper -->
+    <!-- ============================== -->
+    <section id="graduation" class="page-section">
+      <h1 class="section-title"><i class="fa-solid fa-graduation-cap" style="color: var(--color-sand);"></i> لوحة مناقشة التخرج ومساعد العرض | ITI Graduation Helper</h1>
+      <p class="section-subtitle">أداة مساعدة لمشروع التخرج متزامنة بالكامل مع العرض التقديمي الفعلي للمجموعة (55 شريحة) وتحتوي على تايمر ومحاكي أسئلة اللجنة.</p>
+      
+      <div class="pitch-container">
+        <div class="left-col">
+          <!-- Timer Box -->
+          <div class="glass-card timer-box">
+            <h3 style="color: var(--color-sand); margin-bottom: 8px;">مؤقت العرض التقديمي (20 دقيقة)</h3>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 24px;">احرص على ألا تتجاوز الـ 20 دقيقة المخصصة للشرح للجنة التحكيم.</p>
+            <div class="timer-display" id="timerDisplay">20:00</div>
+            <div class="timer-controls">
+              <button class="btn-timer" id="btnTimerStart" title="بدء المؤقت"><i class="fa-solid fa-play"></i></button>
+              <button class="btn-timer" id="btnTimerPause" title="إيقاف مؤقت"><i class="fa-solid fa-pause"></i></button>
+              <button class="btn-timer" id="btnTimerReset" title="إعادة تعيين"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="right-col">
+          <!-- Slide Checklist Box -->
+          <div class="glass-card">
+            <h3>هيكل ومسار شرائح العرض الفعلي (55 شريحة)</h3>
+            <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+            <ul class="slide-checklist">
+              <li class="slide-item">
+                <input type="checkbox" class="slide-checkbox">
+                <div class="slide-details">
+                  <div class="slide-title">الفصل 1: المشكلة وفجوة السوق والحل المقترح (شرائح 1 - 10)</div>
+                  <div class="slide-text">شرح فجوة سوق منتجات الصيف المصري بالساحل والجونة، والحل عبر ركائز وعد سولارا الخمس (SOLARA Promise): تخصيص بالليزر، خياطة يدوية متينة، ومواد طبيعية 100%.</div>
+                </div>
+              </li>
+              <li class="slide-item">
+                <input type="checkbox" class="slide-checkbox">
+                <div class="slide-details">
+                  <div class="slide-title">الفصل 2: دراسة STP وتحديد التموضع الاستراتيجي (شرائح 11 - 22)</div>
+                  <div class="slide-text">تقسيم واستهداف فئة Class A & Upper B، وتموضع البراند كـ Masstige (فخامة بأسعار متاحة: 800 - 1800 ج.م)، وعرض الـ UVP وتجربة unboxing الفاخرة.</div>
+                </div>
+              </li>
+              <li class="slide-item">
+                <input type="checkbox" class="slide-checkbox">
+                <div class="slide-details">
+                  <div class="slide-title">الفصل 3: استراتيجية الهوية البصرية وصوت البراند (شرائح 23 - 31)</div>
+                  <div class="slide-text">عرض الشعار والهوية البصرية الدافئة وتطبيقاتها على المنصات. الهوية الصوتية (Sonic Identity): "SOLARA. Live in the Light".</div>
+                </div>
+              </li>
+              <li class="slide-item">
+                <input type="checkbox" class="slide-checkbox">
+                <div class="slide-details">
+                  <div class="slide-title">الفصل 4: تطوير المنتجات والموك اب الرقمي (شرائح 32 - 41)</div>
+                  <div class="slide-text">استعراض تصنيع حقائب وقبعات سولارا ومراحل التخصيص وكروت الشكر والتغليف الذي تم تعديله بناءً على ملاحظات العميل.</div>
+                </div>
+              </li>
+              <li class="slide-item">
+                <input type="checkbox" class="slide-checkbox">
+                <div class="slide-details">
+                  <div class="slide-title">الفصل 5: استراتيجية الإعلانات ومرحلة التشويق والنتائج (شرائح 42 - 53)</div>
+                  <div class="slide-text">شرح حملة الـ Teaser (الإسكندرية، 600 جنيه) لبناء جمهور مجهز وتدريب الخوارزميات، تليها حملة الـ Launch لجمع أصول البيانات (Leads).</div>
+                </div>
+              </li>
+              <li class="slide-item">
+                <input type="checkbox" class="slide-checkbox">
+                <div class="slide-details">
+                  <div class="slide-title">الفصل 6: الخاتمة وفريق العمل (شرائح 54 - 55)</div>
+                  <div class="slide-text">توجيه الشكر للجنة التحكيم وعرض أسماء المطورين الخمسة للمشروع.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jury Q&A Simulator -->
+      <div class="glass-card" style="margin-top: 24px;">
+        <h3 style="color: var(--color-sand);"><i class="fa-solid fa-comments-question" style="margin-left: 8px;"></i> محاكي أسئلة لجنة التحكيم التفاعلي | Jury Q&A Simulator</h3>
+        <p class="section-subtitle">اضغط على أي سؤال متوقع لعرض الرد الاستراتيجي النموذجي المستند لبيانات العرض التقديمي الخاص بكم.</p>
+        
+        <div class="qa-simulator-container">
+          <details class="qa-item">
+            <summary class="qa-question">س1: لماذا اخترتم التموضع السعري كـ Masstige وليس Luxury بالكامل؟</summary>
+            <div class="qa-answer">
+              لأن فئة الـ <strong>Masstige</strong> (الفخامة المتاحة بأسعار 800 - 1800 ج.م) تتيح لنا استهداف الطبقة المتوسطة العليا والشابات بمزيج يجمع بين التميز والأسعار المعقولة مقارنة بالبراندات الفاخرة المستوردة التي تبدأ من 5000 ج.م. هذا يضمن لنا حجم مبيعات أسرع، وتدفقاً نقدياً مستمراً، ومعدل دوران مخزون أسرع لبراند صاعد في بداية طريقه.
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">س2: ما هي الركائز الخمس لـ "وعد سولارا" (SOLARA Promise) التي تميزكم عن المنافسين؟</summary>
+            <div class="qa-answer">
+              نحن نرتكز على 5 ركائز دفاعية يصعب على الورش البسيطة والبراندات العادية تقليدها معاً:
+              <ul style="padding-right: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                <li><strong>التخصيص الحقيقي (Real Personalization):</strong> نقش الاسم بالليزر على الجلد أو تطريزه بخيوط قطنية مقاومة للماء.</li>
+                <li><strong>الجودة الفائقة (Premium Quality):</strong> تبطين داخلي من الكانفاس المتين وسحابات نحاسية وخياطة نظيفة مخفية.</li>
+                <li><strong>المواد الأصيلة (Authentic Materials):</strong> استخدام قش الحلفا الطبيعي والكتان المحلي والقطن الفاخر بدلاً من الألياف الصناعية.</li>
+                <li><strong>التصاميم الفريدة (Unique Designs):</strong> دمج اللؤلؤ وقطع النحاس المطروق يدوياً.</li>
+                <li><strong>الرحلة الرقمية أولاً (Digital-First Journey):</strong> الرد الفوري في أقل من 15 دقيقة وتوفير موك اب رقمي للمنتج للعميل قبل بدء تصنيعه لضمان الرضا الكامل.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">س3: وضح لنا استراتيجيتكم الإعلانية المكونة من مرحلتين (Ad Strategy Phases)؟</summary>
+            <div class="qa-answer">
+              استراتيجيتنا الإعلانية مبنية على مرحلتين أساسيتين:
+              <ul style="padding-right: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                <li><strong>المرحلة الأولى: حملة التشويق (Teaser Campaign):</strong> وهدفها ليس البيع المباشر، بل إثارة الفضول وتدريب خوارزميات المنصات على الجمهور المهتم بالحقائب الصيفية الفاخرة. استمرت الحملة التجريبية 3 أيام في الإسكندرية بميزانية 600 جنيه وحققت وصولاً لـ 3,548 مستخدماً و220 تفاعلاً و22 متابعاً جديداً بتكلفة بسيطة جداً.</li>
+                <li><strong>المرحلة الثانية: حملة الإطلاق (Launch Campaign):</strong> وهدفها بناء الوعي بالعلامة وقيمتها المعنوية (Brand Equity)، واستخدام أدوات Lead Generation لتجميع بيانات العملاء (كالإيميل والواتساب) كأصول طويلة المدى للشركة للتواصل المجاني معهم لاحقاً وإتمام عمليات التحويل (Conversion).</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">س4: كيف تم توزيع المحتوى وخدمة الهوية البصرية عبر المنصات الاجتماعية؟</summary>
+            <div class="qa-answer">
+              الهوية البصرية لسولارا تعتمد على ألوان "الساعة الذهبية" (Golden-Hour) وخلفيات الكتان الطبيعي والظلال الناعمة. قمنا بتوزيع المحتوى كالتالي:
+              <ul style="padding-right: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                <li><strong>إنستجرام:</strong> المنصة الرئيسية لعرض الكتالوج بجمالية تحاكي المجلات الفاخرة (Editorial Grid).</li>
+                <li><strong>تيك توك وReels:</strong> للتركيز على الجانب الحركي وتجربة فتح الصندوق الفاخرة (Unboxing Experience) التي تزيد من رغبة المشاركة والمحتوى المصنوع بواسطة المستخدمين (UGC).</li>
+                <li><strong>فيسبوك:</strong> لعرض الصور الإبداعية بنمط Quiet Luxury مع مساحات فارغة كبيرة تعكس الفخامة والهدوء.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="qa-item">
+            <summary class="qa-question">س5: كيف تضمنون التوازن بين تصنيع منتج يدوي (Handmade) والتخصيص بالطلب وسرعة التوصيل؟</summary>
+            <div class="qa-answer">
+              نعتمد على نموذج شراكة ذكي مع ورش يدوية محلية في المحافظات لتصنيع القبعات والحقائب الأساسية السادة بكميات مسبقة (Semi-finished inventory). ويتم الاحتفاظ بهذا المخزون السادة في ورشتنا المركزية. بمجرد وصول طلب مخصص من العميل، نقوم بعمل النقش بالليزر للاسم أو التطريز النهائي وشحن المنتج خلال 48 ساعة فقط. هذا يجمع بين سرعة التوصيل وجمال الصنع اليدوي الشخصي.
+            </div>
+          </details>
+        </div>
+      </div>
+      
+      <!-- Team Members Grid -->
+      <div class="glass-card" style="margin-top: 24px;">
+        <h3 style="color: var(--color-sand);"><i class="fa-solid fa-users-gear" style="margin-left: 8px;"></i> فريق العمل ومطورو مشروع SOLARA</h3>
+        <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; text-align: center;">
+          <div style="padding: 16px; border: 1px solid var(--glass-border); border-radius: var(--radius-md); background: rgba(255,255,255,0.02); transition: var(--transition-smooth);" class="glass-card">
+            <div style="font-weight: 700; color: var(--color-sand); font-size: 16px;">أدهم محمود</div>
+            <div style="font-size: 12px; color: var(--color-text-soft); margin-top: 4px;">كتابة وتطوير المحتوى</div>
+          </div>
+          <div style="padding: 16px; border: 1px solid var(--glass-border); border-radius: var(--radius-md); background: rgba(255,255,255,0.02); transition: var(--transition-smooth);" class="glass-card">
+            <div style="font-weight: 700; color: var(--color-sand); font-size: 16px;">أحمد عصام رمضان</div>
+            <div style="font-size: 12px; color: var(--color-text-soft); margin-top: 4px;">تطوير البوابة التفاعلية والهندسة الرقمية</div>
+          </div>
+          <div style="padding: 16px; border: 1px solid var(--glass-border); border-radius: var(--radius-md); background: rgba(255,255,255,0.02); transition: var(--transition-smooth);" class="glass-card">
+            <div style="font-weight: 700; color: var(--color-sand); font-size: 16px;">محمد عبد الدايم</div>
+            <div style="font-size: 12px; color: var(--color-text-soft); margin-top: 4px;">تصوير المنتجات وتطوير المعرض</div>
+          </div>
+          <div style="padding: 16px; border: 1px solid var(--glass-border); border-radius: var(--radius-md); background: rgba(255,255,255,0.02); transition: var(--transition-smooth);" class="glass-card">
+            <div style="font-weight: 700; color: var(--color-sand); font-size: 16px;">خالد حسن</div>
+            <div style="font-size: 12px; color: var(--color-text-soft); margin-top: 4px;">تحليل المنافسين ومؤشرات الأداء</div>
+          </div>
+          <div style="padding: 16px; border: 1px solid var(--glass-border); border-radius: var(--radius-md); background: rgba(255,255,255,0.02); transition: var(--transition-smooth);" class="glass-card">
+            <div style="font-weight: 700; color: var(--color-sand); font-size: 16px;">يوسف هشام</div>
+            <div style="font-size: 12px; color: var(--color-text-soft); margin-top: 4px;">الـ SEO وتحسين محركات البحث</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Presentation Tips -->
+      <div class="glass-card" style="margin-top: 24px;">
+        <h3>💡 نصائح التقديم والمناقشة</h3>
+        <hr style="border: 0; border-top: 1px solid rgba(223, 183, 118, 0.15); margin: 18px 0;">
+        <ul style="padding-right: 20px; line-height: 2; font-size: 14.5px;">
+          <li><strong>الالتزام التام بالوقت:</strong> 20 دقيقة للشرح و 10 دقائق للأسئلة والأجوبة. تدرب على التناوب في الحديث إذا كنت تعمل مع فريق.</li>
+          <li><strong>ركز على إجابة "لماذا":</strong> وضح للمصححين لماذا اخترت منصات معينة (الإنستجرام للصور واللايف ستايل وسارة، تيك توك لمايا وصيحات التحدي).</li>
+          <li><strong>عرض الملفات المصدر:</strong> لا تعتمد فقط على الـ PDF، بل قم بفتح ملفات الوورد المصدرية (.docx) وشيتات الإكسل (.xlsx) إذا سُئلت عن تفاصيل الكلمات المفتاحية أو جدول المهام.</li>
+          <li><strong>عرض هذه البوابة التفاعلية:</strong> افتح هذه البوابة أمام لجنة التقييم أثناء العرض أو المناقشة لإبهارهم بقدرتك على هيكلة وتلخيص كامل المشروع وتقديمه بأسلوب تقني تفاعلي حديث.</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================== -->
+  <!-- Image Lightbox Overlay -->
+  <!-- ============================== -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="Lightbox Image" class="lightbox-img" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-left"></i></button>
+  </div>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Data Models and Logic -->
+  <script src="content_data.js"></script>
+  <script src="script.js?v=2"></script>
+  
+  <!-- Inline logic to populate static arrays on page load -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Populate SWOT
+      if (typeof swotMatrixData !== "undefined") {
+        const populateList = (listId, items) => {
+          const list = document.getElementById(listId);
+          list.innerHTML = "";
+          items.forEach(item => {
+            const li = document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
+          });
+        };
+        populateList("swot-strengths-list", swotMatrixData.strengths);
+        populateList("swot-weaknesses-list", swotMatrixData.weaknesses);
+        populateList("swot-opportunities-list", swotMatrixData.opportunities);
+        populateList("swot-threats-list", swotMatrixData.threats);
+      }
+
+      // Populate PESTLE
+      if (typeof pestleData !== "undefined") {
+        const container = document.getElementById("pestleContainer");
+        container.innerHTML = "";
+        Object.keys(pestleData).forEach(key => {
+          const item = pestleData[key];
+          const card = document.createElement("div");
+          card.className = "glass-card pestle-card";
+          card.innerHTML = `
+            <div class="pestle-title">
+              <i class="fa-solid fa-circle-dot" style="color: var(--color-sand);"></i>
+              ${item.title}
+            </div>
+            <div class="pestle-content">${item.content}</div>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      // Populate Personas
+      if (typeof buyerPersonasData !== "undefined") {
+        const container = document.getElementById("personasGrid");
+        container.innerHTML = "";
+        buyerPersonasData.forEach(p => {
+          const card = document.createElement("div");
+          card.className = "glass-card persona-card";
+          card.innerHTML = `
+            <div class="persona-avatar-box">${p.avatar}</div>
+            <div class="persona-name">${p.name}</div>
+            <div class="persona-role">${p.role}</div>
+            <div class="persona-meta">
+              <strong>الديموغرافيا:</strong><br>${p.demographics}<br><br>
+              <strong>الاهتمامات:</strong><br>${p.interests}
+            </div>
+            <div class="persona-details-section">
+              <div class="persona-label">الاحتياجات الرئيسية (Needs):</div>
+              <ul class="persona-list">
+                ${p.needs.map(n => `<li>${n}</li>`).join("")}
+              </ul>
+              <div class="persona-label">المخاوف (Fears):</div>
+              <ul class="persona-list">
+                ${p.fears.map(f => `<li>${f}</li>`).join("")}
+              </ul>
+              <div class="persona-label">محفز الشراء (Trigger):</div>
+              <div class="persona-trigger">${p.trigger}</div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      // Populate Competitors Table
+      if (typeof competitorsMatrixData !== "undefined") {
+        const body = document.getElementById("competitorsMatrixBody");
+        body.innerHTML = "";
+        competitorsMatrixData.forEach(c => {
+          const tr = document.createElement("tr");
+          const isSolara = c.name.includes("سولارا");
+          const rowStyle = isSolara ? `style="font-weight: 700; background: rgba(223,183,118,0.08);"` : "";
+          tr.innerHTML = `
+            <td ${rowStyle}>${c.name}</td>
+            <td>${c.positioning}</td>
+            <td style="color: var(--color-sand); font-weight: 700;">${c.priceRange}</td>
+            <td style="color: var(--color-success);">${c.strengths}</td>
+            <td style="color: var(--color-danger);">${c.weaknesses}</td>
+            <td>${c.focus}</td>
+          `;
+          body.appendChild(tr);
+        });
+      }
+
+      // Populate SEO Keywords
+      if (typeof seoKeywordsData !== "undefined") {
+        const body = document.getElementById("seoKeywordsBody");
+        body.innerHTML = "";
+        seoKeywordsData.forEach(k => {
+          const tr = document.createElement("tr");
+          let intentBadge = "";
+          if (k.intent.includes("شراء")) {
+            intentBadge = `<span style="background: rgba(196,112,63,0.15); border: 1px solid rgba(196,112,63,0.4); color: var(--color-terracotta); padding: 3px 8px; border-radius: 6px; font-size: 11px;">${k.intent}</span>`;
+          } else {
+            intentBadge = `<span style="background: rgba(223,183,118,0.15); border: 1px solid rgba(223,183,118,0.4); color: var(--color-sand); padding: 3px 8px; border-radius: 6px; font-size: 11px;">${k.intent}</span>`;
+          }
+          tr.innerHTML = `
+            <td style="font-weight: 700;">${k.keyword}</td>
+            <td style="color: var(--color-sand); font-weight: 700;">${k.searchVolume}</td>
+            <td>${k.difficulty}</td>
+            <td>${intentBadge}</td>
+          `;
+          body.appendChild(tr);
+        });
+      }
+
+      // Populate Design Assets Grids
+      if (typeof designAssetsData !== "undefined") {
+        const renderAssetGrid = (containerId, items) => {
+          const container = document.getElementById(containerId);
+          if (!container || !items) return;
+          container.innerHTML = "";
+          items.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "glass-card asset-card";
+            card.innerHTML = `
+              <div class="asset-img-container">
+                <img src="${item.src}" alt="${item.name}" class="asset-img lightbox-trigger" loading="lazy">
+              </div>
+              <div class="asset-name">${item.name}</div>
+              <div class="asset-desc">${item.desc}</div>
+            `;
+            container.appendChild(card);
+          });
+        };
+
+        renderAssetGrid("logoAssetsGrid", designAssetsData.logo);
+        renderAssetGrid("packagingAssetsGrid", designAssetsData.packaging);
+        renderAssetGrid("showcaseAssetsGrid", designAssetsData.showcases);
+        renderAssetGrid("adsAssetsGrid", designAssetsData.ads);
+        renderAssetGrid("stationeryAssetsGrid", designAssetsData.stationery);
+        renderAssetGrid("mockupsAssetsGrid", designAssetsData.mockups);
+        renderAssetGrid("socialMediaAssetsGrid", designAssetsData.socialMedia);
+      }
+
+      // Trigger initial UI setup
+      const firstChartTab = document.querySelector(".btn-chart-tab");
+      if (firstChartTab) firstChartTab.click();
+      
+      const firstBriefCard = document.querySelector(".ugc-brief-card");
+      if (firstBriefCard) firstBriefCard.click();
+
+      const firstSliderBtn = document.querySelector(".btn-slider-select");
+      if (firstSliderBtn) firstSliderBtn.click();
+    });
+  </script>
+</body>
+</html>
